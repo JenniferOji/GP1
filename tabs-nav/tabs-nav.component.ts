@@ -4,8 +4,7 @@ import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { RouterLinkWithHref } from '@angular/router';
 import { addIcons } from 'ionicons';
-import { heart } from 'ionicons/icons';
-
+import { heart, map, restaurant, bicycle, clipboard} from 'ionicons/icons';
 
 @Component({
   selector: 'app-tabs-nav',
@@ -15,6 +14,15 @@ import { heart } from 'ionicons/icons';
   imports: [ IonicModule, RouterLinkWithHref]
 })
 export class TabsNavComponent{
+
+  constructor() {
+    addIcons({map});
+    addIcons({restaurant});
+    addIcons({bicycle});
+    addIcons({clipboard});
+
+
+   }
 
 
 }
